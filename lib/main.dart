@@ -414,25 +414,23 @@ class Segunda extends StatelessWidget {
             children: [
               Container(
                 padding: const EdgeInsets.all(8),
-                child: Expanded(
-                  child: Column(
-                    children: [
-                      TextField(
-                        maxLines: null,
-                        decoration: const InputDecoration(
-                          hintText: 'Nombre de Tu Hilo',
-                        ),
-                        controller: _controller2,
+                child: Column(
+                  children: [
+                    TextField(
+                      maxLines: null,
+                      decoration: const InputDecoration(
+                        hintText: 'Nombre de Tu Hilo',
                       ),
-                      TextField(
-                        maxLines: null,
-                        decoration: const InputDecoration(
-                          hintText: 'Escribe un mensaje',
-                        ),
-                        controller: _controller,
+                      controller: _controller2,
+                    ),
+                    TextField(
+                      maxLines: null,
+                      decoration: const InputDecoration(
+                        hintText: 'Escribe un mensaje',
                       ),
-                    ],
-                  ),
+                      controller: _controller,
+                    ),
+                  ],
                 )
               ),
                       IconButton(
